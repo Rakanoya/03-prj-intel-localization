@@ -86,6 +86,7 @@ header p {
   object-fit: cover; /* Ensure images fit properly without distortion */
   background-color: #ddd; /* Fallback color for missing images */
   transition: opacity 0.3s ease; /* Smooth fade effect */
+  display: block; /* Ensure no extra spacing below images */
 }
 
 .card:hover img {
@@ -273,4 +274,12 @@ form .text-center {
   color: white;
   text-decoration: none;
   border-radius: 5px;
+}
+
+/* Center text below the timeline */
+.text-center {
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+  color: #555;
 }
