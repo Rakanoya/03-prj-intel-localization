@@ -29,8 +29,15 @@ header img {
 
 /* Header Logo Styling */
 .header-logo {
-  width: 140px; /* Set a fixed width for the logo */
-  margin-bottom: 20px; /* Add spacing below the logo */
+  width: 140px;
+  margin-bottom: 20px;
+  background: transparent; /* Remove white box */
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  border: none;
+  filter: none;
+  opacity: 1;
 }
 
 header h1 {
@@ -282,4 +289,34 @@ form .text-center {
   margin-top: 20px;
   font-style: italic;
   color: #555;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #003366; /* Dark blue background for strong contrast */
+  padding: 40px 20px 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border: 1px solid #002244;
+  margin-bottom: 40px;
+}
+
+/* High contrast for header text */
+header,
+.main-header {
+  color: #fff !important;
+}
+
+header h1,
+.main-header h1 {
+  color: #fff !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+header p,
+.main-header p {
+  color: #e0e6ed !important;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.2);
 }
